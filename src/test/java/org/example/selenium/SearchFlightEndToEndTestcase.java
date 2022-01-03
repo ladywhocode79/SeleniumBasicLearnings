@@ -58,7 +58,7 @@ public class SearchFlightEndToEndTestcase {
         driver.findElement(By.cssSelector("input[id='ctl00_mainContent_btn_FindFlights']")).click();
 
 
-
+        driver.close();
     }
 
 }
