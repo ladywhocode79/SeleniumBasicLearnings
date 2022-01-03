@@ -27,6 +27,6 @@ public class DynamicDropDown {
 
 
 
-        //driver.close();
+        driver.close();
     }
 }
