@@ -36,7 +36,8 @@ public class Locators {
         //to get value from element of browser
         //driver.findElement(By.name("commit")).getText();
 
-        //to identify element from list of elements with same attribute values we use index,applicable only for xpath and not css
+        //to identify element from list of elements with same attribute values
+        // we use index,applicable only for xpath and not css
         //eg->//Tagname[@attribute = 'value'][index=1 or 2or 3 or any number]
 
         //for css we use following format
