@@ -4,11 +4,15 @@
 
         import java.util.Set;
 
+        import org.checkerframework.checker.units.qual.A;
         import org.openqa.selenium.By;
 
         import org.openqa.selenium.WebDriver;
 
         import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.interactions.Actions;
+
+        import javax.swing.*;
 
         public class MouseEventsAndParentChildWindow {
             public static void main(String[] args) {
@@ -39,6 +43,14 @@
                 driver.switchTo().window(parentId);
 
                 driver.findElement(By.id("username")).sendKeys(emailId);
+              /*Right click
+              Actions actions = new Actions(driver);
+                actions.moveToElement(driver.findElement()).contextClick().build().perform();*/
+
+                /*enter text ‘Hello’ in capital letters help of actions class in Selenium
+                 Actions actions = new Actions(driver);
+                actions.moveToElement(driver.findElement()).click().keyDown(Keys.SHIFT).sendKeys("Hello").build().perform();
+                * */
                 driver.close();
 
             }
